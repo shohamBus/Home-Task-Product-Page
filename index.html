@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://kit.fontawesome.com/387c564266.js" crossorigin="anonymous"></script>
+    <title>exe</title>
+  </head>
+  <body>
+      <main>
+        <div class="product-content">
+          <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+              <li id="carousel__slide1"
+                  tabindex="0"
+                  class="carousel__slide ">
+                  <img src="/images1/main1.png" width="100%" height="100%">
+                <div class="carousel__snapper"> 
+                  <a href="#carousel__slide6"
+                     class="carousel__prev">Go to last slide</a>
+                  <a href="#carousel__slide2"
+                     class="carousel__next">Go to next slide</a>
+                </div>
+              </li>
+              <li id="carousel__slide2"
+                  tabindex="0"
+                  class="carousel__slide">
+                  <img src="/images1/sub1.png" width="100%" height="100%">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide1"
+                   class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide3"
+                   class="carousel__next">Go to next slide</a>
+              </li>
+              <li id="carousel__slide3"
+                  tabindex="0"
+                  class="carousel__slide">
+                  <img src="/images1/sub2.png" width="100%" height="100%">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide2"
+                   class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide4"
+                   class="carousel__next">Go to next slide</a>
+              </li>
+              <li id="carousel__slide4"
+                  tabindex="0"
+                  class="carousel__slide">
+                  <img src="/images1/main2.png" width="100%" height="100%">
+                <div class="carousel__snapper"></div>
+                <a href="#carousel__slide3"
+                   class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide5"
+                   class="carousel__next">Go to first slide</a>
+              </li>
+              <li id="carousel__slide5"
+              tabindex="0"
+              class="carousel__slide">
+              <img src="/images1/sub3.png" width="100%" height="100%">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide4"
+               class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide6"
+               class="carousel__next">Go to first slide</a>
+          </li>
+          <li id="carousel__slide6"
+          tabindex="0"
+          class="carousel__slide ">
+          <img src="/images1/sub3.png" width="100%" height="100%">
+        <div class="carousel__snapper"></div>
+        <a href="#carousel__slide5"
+           class="carousel__prev">Go to previous slide</a>
+        <a href="#carousel__slide1"
+           class="carousel__next">Go to first slide</a>
+      </li>
+            </ol>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide1"
+                     class="carousel__navigation-button">Go to slide 1</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide2"
+                     class="carousel__navigation-button">Go to slide 2</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide3"
+                     class="carousel__navigation-button">Go to slide 3</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide4"
+                     class="carousel__navigation-button">Go to slide 4</a>
+                </li>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide4"
+                   class="carousel__navigation-button">Go to slide 5</a>
+              </li>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide4"
+                 class="carousel__navigation-button">Go to slide 6</a>
+            </li>
+              </ol>
+            </aside>
+          </section>
+          <div class="box">
+            <h4>Look of the month</h4>
+            <h1 class="name"><strong>סט מצעי כותנה סאטן מודפסים MIA</strong></h1>
+            <p class="price">₪669.00-₪449.00</p>
+          </div>
+          <div class="box sizes">
+            <div onclick="Size(event,0)" class="size">
+              <div class="sizeChild">סט זוגי 160X200</div>
+              <div class="sizeChild">₪599.00</div>
+            </div>
+            <div onclick="Size(event,1)" class="size">
+              <div>סט זוגי 180X200</div>
+              <div>₪629.00</div>
+            </div>
+            <div onclick="Size(event,2)" class="size">
+              <div>סט זוגי 200X200</div>
+              <div>₪639.00</div>
+            </div>
+            <div class="size-disable">
+              <div>סט יחיד 90X200</div>
+              <div>₪449.00</div>
+            </div>
+            <div class="size-disable">
+              <div>סט כפול 160X200</div>
+              <div>₪699.00</div>
+            </div>
+            <div onclick="Size(event,3)" class="size">
+              <div>סט זוגי 120X200</div>
+              <div>₪469.00</div>
+            </div>
+          </div>
+          <div class="box btn-count">
+              <span class="act" onclick="Counter('increment')">+</span>
+              <input type="number" disabled readonly value=1 class="input-text"></input>
+              <span class="act" onclick="Counter('decrement')">-</span>
+          </div>
+          <div class="box">
+          <button class=" btn-cart">
+           הוספה לסל
+          </button>
+        </div>
+            <p>בקנייה מעל 249 ש"ח- משלוח חינם(עד 5 ימי אספקה)</p>
+          <div class="menu box">
+            <div>
+              <h3 class="act-menu act" onclick="Content('details')">על הפריט</h3>
+            </div>
+            <div>
+              <h3 class="act-menu act" onclick="Content('delivery')">משלוחים והחזרות</h3>
+            </div>
+          </div>
+          <hr >
+          <div class="content details">
+              <p>
+                סט מצעי כותנה איכותיים ונעימים באריגת סאטן יוקרתית.בד <br />
+                הסאטן מתאפיין בברק הייחודי שלו ובמגעו הנעים על הגוף.
+              </p>
+              <p class="head-content">הרכב החומר:</p>
+              <p>100% כותנה סאטן</p>
+              <p class="head-content">מידות:</p>
+              <p>
+                סט יחיד 90X200:ציפית 50X70,סדין 90X200X28,ציפה<br />
+                150X200
+              </p>
+              <p>
+                סט מיטה וחצי 120X200:ציפית 50X70,סדין 120X200X28,ציפה<br />
+                150X200
+              </p>
+              <p>
+                סט זוגי 160X200:ציפית 50X70,סדין 160X200X30,ציפה<br />
+                200X220
+              </p>
+              <p>
+                סט זוגי 180X200:ציפית 50X70,סדין 180X200X30,ציפה<br />
+                200X220
+              </p>
+              <p>
+                סט זוגי 200X200:ציפית 50X70,סדין 200X200X30,ציפה<br />
+                200X220
+              </p>
+              <p>
+                סט זוגי כפול 160X200: שתי ציפיות 50X70,סדין<br />
+                160X200X30,שתי ציפות 150X200
+              </p>
+              <p class="head-content">צפיפות:</p>
+              <p>200 חוטים לאינץ</p>
+              <p class="head-content">הוראות טיפול:</p>
+              <p>
+                כביסה עם גוון צבע דומה<br />
+                לכבס בנפרד בטמפ' של עד 40 מעלות<br />
+                כביסה ללא חומרי הלבנה<br />
+                ניתן לגהץ בחום נמוך<br />
+                אין לבצע ניקוי יבש
+              </p>
+              <p class="head-content">מספר דגם:</p>
+              <p id="model">86680059900</p>
+              <p>ארץ ייצור: טורקיה</p>
+              <p>
+                המוצרים המוצעים באתר מיובאים ע"י/מיובאים/מיוצרים<br />
+                עבור:קבוצת גולף א.ק בע"מ (ח.צ 510289564), רחוב<br />
+                המלאכה 5, נתניה
+              </p>
+              <img src="./member-card.png" width="400" height="150">
+            </div>
+            <div class="content delivery">
+              <p class="head-content">שליח עד הבית | דואר רשום:</p>
+              <p>  בקנייה עד 149 ₪ - 19 ₪
+                
+                בקניה<br> מעל 149 ₪<br>  עד 299 ₪- 9 ₪
+                בקניה מ-299 ₪ - <br>הטבת שליחות חינם
+              </p>
+                <p class="head-content">החלפות והחזרות</p>
+                החלפות והחזרות בקלי קלות וללא עלות: עד<br> 14 יום מיום קבלת הפריט, בחנויות רשת Golf&Co.<br>
+                החזרות והחלפות יתאפשרו בתנאי שהמוצרים יוחזרו <br>ללא פגם ומבלי שנעשה בהם שימוש, באריזה<br> סגורה ובצירוף התווית המקורית.</p>
+            </p>
+            <img src="./member-card.png" width="400" height="150">
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-content images">
+          <figure class="zoomb zoom" onmousemove="zoom(event)" style="background-image: url(./images1/main1.png)">
+            <span class="btns">
+              <Button onclick="Toggle(1)"  class="btn no"><i class="far fa-heart"></i></Button>
+              <Button onclick="Toggle(0)"  class="btn yes"><i class="fa-solid fa-heart"></i></Button>
+          </span>
+              <img class="main-photo photo" src="./images1/main1.png" alt="photo" />
+            </figure>
+          <div class="sub-photos " >
+            <figure class="zooms zoom" onmousemove="zoom(event)" style="background-image: url(./images1/sub1.png)">
+            <img class="sub-photo photo" src="./images1/sub1.png" alt="photo" />
+            </figure>
+            <figure class="zooms zoom" onmousemove="zoom(event)" style="background-image: url(./images1/sub2.png)">
+            <img class="sub-photo photo" src="./images1/sub2.png" alt="photo" />
+            </figure>
+          </div>
+          <figure class="zoomb zoom" onmousemove="zoom(event)" style="background-image: url(./images1/main2.png)">
+            <img class="main-photo photo" src="./images1/main2.png" alt="photo" />
+          </figure>
+          <div class="sub-photos ">
+            <figure class="zooms zoom" onmousemove="zoom(event)" style="background-image: url(./images1/sub3.png)">
+            <img class="sub-photo photo " src="./images1/sub3.png" alt="photo" />
+            </figure>
+            <figure class="zooms zoom" onmousemove="zoom(event)" style="background-image: url(./images1/sub4.png)">
+            <img class="sub-photo photo" src="./images1/sub4.png" alt="photo" />
+            </figure>
+          </div>
+        </div>
+      </main>
+    </divr>
+    <script src="main.js"></script>
+  </body>
+</html>
